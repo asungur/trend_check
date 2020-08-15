@@ -55,6 +55,34 @@ ruby "2.6.5"
 
 Re-run `bundle install` before you run the app.
 
+For **GoogleCharts** [here](https://github.com/asungur/trend_check/blob/master/views/layout.erb)**,** you need to register [Google Charts](https://developers.google.com/chart) and create an API key. Replace `mapsApiKey` in `layout.erb`
+
+```ruby
+.
+.
+google.charts.load('current', {
+        'packages': ['geochart'],
+        'mapsApiKey' : 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
+      });
+      google.charts.setOnLoadCallback(drawMarkersMap);
+.
+.
+```
+
+For accessing **TwitterAPI** provider, you need to create [a developer account](https://developer.twitter.com/en/docs) and get an API key. Use your key to [create a Bearer token](https://developer.twitter.com/en/docs/authentication/oauth-2-0/bearer-tokens). Lastly, update the link to your token in `retrieve_trends.rb`:
+
+```ruby
+.
+.
+class RetrieveTrends
+  attr_reader :trends
+  SECRET_TOKEN_YML = "../developer_data/token.yml"
+  REQUEST_URI = "https://api.twitter.com/1.1/trends/place.json"
+.
+.
+```
+
+
 ## Tests
 
 I've used [minitest](https://github.com/seattlerb/minitest) library with `rack/test` helper methods. Tests mainly focus on retrieve the relevant pages, user log-in/log-out functionalities. Run the tests from the project directory:
