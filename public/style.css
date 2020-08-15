@@ -1,0 +1,48 @@
+body {
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+
+.navbar {
+  background-color: #222222;
+}
+
+.navbar-fixed-top {
+  margin-bottom: 20px;
+}
+
+.alert p {
+  font-size: 15px;
+  font-weight: 50;
+  line-height: 15px;
+  margin: 9px;
+}
+
+.hero-unit {
+  padding: 34px 20px 20px 20px;
+  text-align: center;
+  margin-top: 0;
+}
+
+.country-chart {
+  position: absolute;
+  width: 1500px;
+  height: 1000px;
+  margin: -200px 0 0 -400px;
+}
+
+.container-main {
+  position: relative;
+  overflow: hidden;
+  max-width: auto;
+  min-width: 600px;
+  height: 750px;
+}
+
+#login {
+  text-align: center;
+}
+
+#user-input {
+  margin: 0 10px 0 0;
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- GEO CHART KEY - HIDE BEFORE COMMIT -->
+  <% if @table_sorts %>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type='text/javascript'>
+      google.charts.load('current', {
+        'packages': ['geochart'],
+        'mapsApiKey' : 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
+      });
+      google.charts.setOnLoadCallback(drawMarkersMap);
+
+      
+      function drawMarkersMap() {
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'City');
+        data.addColumn('string', 'info');
+        data.addColumn('number', 'Total Volume');
+
+        <% if @uk_trends %>  
+          <% @uk_towns_volume.each_with_index do |town , i| %>
+            var townName = "<%= town[:name] %>";
+            var townTrend = "<%= town[:trend] %>";
+
+            data.addRow([ townName, (townName + ' | Top Trend: ' + townTrend), <%= town[:total_volume] %>]);
+          <% end %>
+        <% else %>
+          var topTrend = "Top Trend: <%= @town_data[:trend] %> <%= @town_data[:trend_volume] %>"
+
+          data.addRow([ "<%= @town_data[:name] %>", topTrend, <%= @town_data[:total_volume] %> ]);
+        <% end %>
+
+        var options = {
+          region: 'GB',
+          sizeAxis: { minSize: 6, maxSize: 6},
+          displayMode: 'markers',
+          colorAxis: {colors: ['2DA6C6', '2DA6C6']},
+          legend: 'none',
+          keepAspectRatio: false,
+          title: 'Trends Map',
+        };
+
+        var chart = new google.visualization.GeoChart(document.getElementById('chart_div'));
+        chart.draw(data, options);
+      };
+    </script>
+  <% end %>
+  <!-- Bootstrap Fluid Layout-->
+  <link href="https://getbootstrap.com/2.0.3/assets/css/bootstrap.css" rel="stylesheet">
+  <link href="https://getbootstrap.com/2.0.3/assets/css/bootstrap-responsive.css" rel="stylesheet">
+  <!-- Styling -->
+  <link href="/style.css" rel="stylesheet" >  
+  <title>Trend Check</title>
+</head>
+<body>
+  <!-- NAVBAR -->
+  <div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+      <div class="container-fluid">
+        <a class="brand" href="/">Trend Check</a>
+        <div class="btn-group pull-right">
+          <a class="btn btn-primary" href="/refresh-api">↻ Reload Trends</a>
+          <a class="btn dropdown-toggle" data-toggle="dropdown">
+            <i class="icon-user"></i>
+            <% if session[:username] %>
+              <%= session[:username] %>
+            <% else %>
+              Register/Log-in
+            <% end %>
+            <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <% if session[:username] %>
+              <li>
+                <a href="/signout">Sign Out</a>
+              </li>
+            <% else %>
+              <li>
+                <a href="/signin">Sign In</a>
+              </li>
+              <li class="divider"></li>
+              <li>
+                <a href="/signup">Sign Up</a>
+              </li>
+            <% end %>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row-fluid">
+      <div class="span2">
+        <div class="well sidebar-nav">
+          <ul class="nav nav-list">
+            <li class="nav-header">Locations</li>
+            <% @loc_navigators.each do |location| %>
+              <li>
+                <a href="/<%= location[:link] %>"> <%= location[:name] %></a>
+              </li>
+            <% end %>
+          </ul>
+        </div>
+      </div>
+      <!-- CHANGES BETWEEN PAGES -->
+      <%== yield %>
+      <!-- CHANGES BETWEEN PAGES -->
+    </div>
+    <hr>
+    <footer>
+      <div class="span1">
+        <a href="https://github.com/asungur/trend_check">
+          <img width="32px" src="/GitHub-Mark-32px.png">
+        </a>
+      </div>
+      <div class="span3">
+        <a href="https://github.com/asungur">
+          <p>©Alican Sungur 2020</p>
+        </a>
+      </div>
+    </footer>
+  </div>
+  <!-- JS for dropdown menu -->
+  <script src="https://getbootstrap.com/2.0.3/assets/js/jquery.js"></script>
+  <script src="https://getbootstrap.com/2.0.3/assets/js/bootstrap-dropdown.js"></script>
+  <script src="https://getbootstrap.com/2.0.2/assets/js/bootstrap-alert.js"></script>
+</body>
+</html>

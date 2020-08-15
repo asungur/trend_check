@@ -1,0 +1,326 @@
+[
+  {
+    "name": "Birmingham",
+    "placeType": {
+      "code": 7,
+      "name": "Town"
+    },
+    "url": "http:\/\/where.yahooapis.com\/v1\/place\/12723",
+    "parentid": 23424975,
+    "country": "United Kingdom",
+    "woeid": 12723,
+    "countryCode": "GB"
+  },
+  {
+    "name": "Blackpool",
+    "placeType": {
+      "code": 7,
+      "name": "Town"
+    },
+    "url": "http:\/\/where.yahooapis.com\/v1\/place\/12903",
+    "parentid": 23424975,
+    "country": "United Kingdom",
+    "woeid": 12903,
+    "countryCode": "GB"
+  },
+  {
+    "name": "Bournemouth",
+    "placeType": {
+      "code": 7,
+      "name": "Town"
+    },
+    "url": "http:\/\/where.yahooapis.com\/v1\/place\/13383",
+    "parentid": 23424975,
+    "country": "United Kingdom",
+    "woeid": 13383,
+    "countryCode": "GB"
+  },
+  {
+    "name": "Brighton",
+    "placeType": {
+      "code": 7,
+      "name": "Town"
+    },
+    "url": "http:\/\/where.yahooapis.com\/v1\/place\/13911",
+    "parentid": 23424975,
+    "country": "United Kingdom",
+    "woeid": 13911,
+    "countryCode": "GB"
+  },
+  {
+    "name": "Bristol",
+    "placeType": {
+      "code": 7,
+      "name": "Town"
+    },
+    "url": "http:\/\/where.yahooapis.com\/v1\/place\/13963",
+    "parentid": 23424975,
+    "country": "United Kingdom",
+    "woeid": 13963,
+    "countryCode": "GB"
+  },
+  {
+    "name": "Cardiff",
+    "placeType": {
+      "code": 7,
+      "name": "Town"
+    },
+    "url": "http:\/\/where.yahooapis.com\/v1\/place\/15127",
+    "parentid": 23424975,
+    "country": "United Kingdom",
+    "woeid": 15127,
+    "countryCode": "GB"
+  },
+  {
+    "name": "Coventry",
+    "placeType": {
+      "code": 7,
+      "name": "Town"
+    },
+    "url": "http:\/\/where.yahooapis.com\/v1\/place\/17044",
+    "parentid": 23424975,
+    "country": "United Kingdom",
+    "woeid": 17044,
+    "countryCode": "GB"
+  },
+  {
+    "name": "Derby",
+    "placeType": {
+      "code": 7,
+      "name": "Town"
+    },
+    "url": "http:\/\/where.yahooapis.com\/v1\/place\/18114",
+    "parentid": 23424975,
+    "country": "United Kingdom",
+    "woeid": 18114,
+    "countryCode": "GB"
+  },
+  {
+    "name": "Edinburgh",
+    "placeType": {
+      "code": 7,
+      "name": "Town"
+    },
+    "url": "http:\/\/where.yahooapis.com\/v1\/place\/19344",
+    "parentid": 23424975,
+    "country": "United Kingdom",
+    "woeid": 19344,
+    "countryCode": "GB"
+  },
+  {
+    "name": "Glasgow",
+    "placeType": {
+      "code": 7,
+      "name": "Town"
+    },
+    "url": "http:\/\/where.yahooapis.com\/v1\/place\/21125",
+    "parentid": 23424975,
+    "country": "United Kingdom",
+    "woeid": 21125,
+    "countryCode": "GB"
+  },
+  {
+    "name": "Hull",
+    "placeType": {
+      "code": 7,
+      "name": "Town"
+    },
+    "url": "http:\/\/where.yahooapis.com\/v1\/place\/25211",
+    "parentid": 23424975,
+    "country": "United Kingdom",
+    "woeid": 25211,
+    "countryCode": "GB"
+  },
+  {
+    "name": "Leeds",
+    "placeType": {
+      "code": 7,
+      "name": "Town"
+    },
+    "url": "http:\/\/where.yahooapis.com\/v1\/place\/26042",
+    "parentid": 23424975,
+    "country": "United Kingdom",
+    "woeid": 26042,
+    "countryCode": "GB"
+  },
+  {
+    "name": "Leicester",
+    "placeType": {
+      "code": 7,
+      "name": "Town"
+    },
+    "url": "http:\/\/where.yahooapis.com\/v1\/place\/26062",
+    "parentid": 23424975,
+    "country": "United Kingdom",
+    "woeid": 26062,
+    "countryCode": "GB"
+  },
+  {
+    "name": "Liverpool",
+    "placeType": {
+      "code": 7,
+      "name": "Town"
+    },
+    "url": "http:\/\/where.yahooapis.com\/v1\/place\/26734",
+    "parentid": 23424975,
+    "country": "United Kingdom",
+    "woeid": 26734,
+    "countryCode": "GB"
+  },
+  {
+    "name": "Manchester",
+    "placeType": {
+      "code": 7,
+      "name": "Town"
+    },
+    "url": "http:\/\/where.yahooapis.com\/v1\/place\/28218",
+    "parentid": 23424975,
+    "country": "United Kingdom",
+    "woeid": 28218,
+    "countryCode": "GB"
+  },
+  {
+    "name": "Middlesbrough",
+    "placeType": {
+      "code": 7,
+      "name": "Town"
+    },
+    "url": "http:\/\/where.yahooapis.com\/v1\/place\/28869",
+    "parentid": 23424975,
+    "country": "United Kingdom",
+    "woeid": 28869,
+    "countryCode": "GB"
+  },
+  {
+    "name": "Newcastle",
+    "placeType": {
+      "code": 7,
+      "name": "Town"
+    },
+    "url": "http:\/\/where.yahooapis.com\/v1\/place\/30079",
+    "parentid": 23424975,
+    "country": "United Kingdom",
+    "woeid": 30079,
+    "countryCode": "GB"
+  },
+  {
+    "name": "Nottingham",
+    "placeType": {
+      "code": 7,
+      "name": "Town"
+    },
+    "url": "http:\/\/where.yahooapis.com\/v1\/place\/30720",
+    "parentid": 23424975,
+    "country": "United Kingdom",
+    "woeid": 30720,
+    "countryCode": "GB"
+  },
+  {
+    "name": "Plymouth",
+    "placeType": {
+      "code": 7,
+      "name": "Town"
+    },
+    "url": "http:\/\/where.yahooapis.com\/v1\/place\/32185",
+    "parentid": 23424975,
+    "country": "United Kingdom",
+    "woeid": 32185,
+    "countryCode": "GB"
+  },
+  {
+    "name": "Portsmouth",
+    "placeType": {
+      "code": 7,
+      "name": "Town"
+    },
+    "url": "http:\/\/where.yahooapis.com\/v1\/place\/32452",
+    "parentid": 23424975,
+    "country": "United Kingdom",
+    "woeid": 32452,
+    "countryCode": "GB"
+  },
+  {
+    "name": "Preston",
+    "placeType": {
+      "code": 7,
+      "name": "Town"
+    },
+    "url": "http:\/\/where.yahooapis.com\/v1\/place\/32566",
+    "parentid": 23424975,
+    "country": "United Kingdom",
+    "woeid": 32566,
+    "countryCode": "GB"
+  },
+  {
+    "name": "Sheffield",
+    "placeType": {
+      "code": 7,
+      "name": "Town"
+    },
+    "url": "http:\/\/where.yahooapis.com\/v1\/place\/34503",
+    "parentid": 23424975,
+    "country": "United Kingdom",
+    "woeid": 34503,
+    "countryCode": "GB"
+  },
+  {
+    "name": "Stoke-on-Trent",
+    "placeType": {
+      "code": 7,
+      "name": "Town"
+    },
+    "url": "http:\/\/where.yahooapis.com\/v1\/place\/36240",
+    "parentid": 23424975,
+    "country": "United Kingdom",
+    "woeid": 36240,
+    "countryCode": "GB"
+  },
+  {
+    "name": "Swansea",
+    "placeType": {
+      "code": 7,
+      "name": "Town"
+    },
+    "url": "http:\/\/where.yahooapis.com\/v1\/place\/36758",
+    "parentid": 23424975,
+    "country": "United Kingdom",
+    "woeid": 36758,
+    "countryCode": "GB"
+  },
+  {
+    "name": "London",
+    "placeType": {
+      "code": 7,
+      "name": "Town"
+    },
+    "url": "http:\/\/where.yahooapis.com\/v1\/place\/44418",
+    "parentid": 23424975,
+    "country": "United Kingdom",
+    "woeid": 44418,
+    "countryCode": "GB"
+  },
+  {
+    "name": "Belfast",
+    "placeType": {
+      "code": 7,
+      "name": "Town"
+    },
+    "url": "http:\/\/where.yahooapis.com\/v1\/place\/44544",
+    "parentid": 23424975,
+    "country": "United Kingdom",
+    "woeid": 44544,
+    "countryCode": "GB"
+  },
+  {
+    "name": "United Kingdom",
+    "placeType": {
+      "code": 12,
+      "name": "Country"
+    },
+    "url": "http:\/\/where.yahooapis.com\/v1\/place\/23424975",
+    "parentid": 1,
+    "country": "United Kingdom",
+    "woeid": 23424975,
+    "countryCode": "GB"
+  }
+]

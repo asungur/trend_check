@@ -1,0 +1,23 @@
+<div class="span10">
+  <div class="hero-unit btn-toolbar" id="login">
+  <!-- div class="btn-group" -->
+    <form class="form-inline" method="post" action="/signin">
+      <div class="form-group">
+        <label for="username"> Username:
+          <input type="text" name="username" id="user-input"/>
+        </label>
+        <label for="password"> Password:
+          <input type="password" name="password" id="user-input"/>
+        </label>
+        <button type="submit" class="btn btn-inverse" id="login">Sign In </button>
+      </div>
+    </form>
+    <% if session[:message] %>
+      <div class="alert alert-primary alert-dismissible" role="alert">
+        <a class="close" data-dismiss="alert">×</a>
+        <p><%= session.delete(:message) %></p>
+      </div>
+    <% end %>
+  <!-- /div -->
+  </div>
+</div>

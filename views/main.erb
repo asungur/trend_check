@@ -1,0 +1,40 @@
+<div class="span10">
+  <div class="hero-unit">
+    <p>Twitter Trends | United Kingdom</p>
+    <% if session[:message] %>
+      <div class="alert alert-primary alert-dismissible" role="alert">
+        <a class="close" data-dismiss="alert">×</a>
+        <p><%= session.delete(:message) %></p>
+      </div>
+    <% end %>
+  </div>
+</div>
+<div class="span4">
+  <table class="table">
+    <thead>
+      <tr>
+        <% @table_sorts.each_pair do |data, link| %>
+            <th scope="col"><%== link %></th>
+        <% end %>
+      </tr>
+    </thead>
+    <tbody>
+      <% @uk_trends.each_with_index do |trend, i| %>
+        <tr>
+          <th scope="row"><%= trend[:id] %></th>
+          <td>
+            <a href="https://twitter.com/search?q=<%= chop_hashtag(trend[:name]) %>" target="_blank">
+            <%= trend[:name] %>
+          </td>
+          <td><%= trend[:volume] == 0 ? "-" : format_number(trend[:volume]) %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
+<div class="span6">
+  <div class="container-main"> 
+    <div class="country-chart" id="chart_div"></div>
+  </div>
+</div>
+
