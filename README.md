@@ -2,7 +2,7 @@
 
 ## Description
 
-**Trend Check** is a website that I've built while playing with TwitterAPI. It is written in Ruby and Sinatra, uses ERB view templates and PostgreSQL database. It also benefits from [Google Charts](https://developers.google.com/chart) (GeoCharts to be more specific) for displaying locations and top trends on a UK map.
+**Trend-Check** is a website that I've built while playing with TwitterAPI. It is written in Ruby and Sinatra, uses ERB view templates and PostgreSQL database. It also benefits from [Google Charts](https://developers.google.com/chart) (GeoCharts to be more specific) for displaying locations and top trends on a UK map.
 
 Website displays top **Twitter trend**s for United Kingdom and 26 cities that exist in Yahoo's [WOEID](https://en.wikipedia.org/wiki/WOEID) database. In the main UK page, top trends in the UK will be listed on the table. The map displays individual cities, their total trend volumes (as much as provided by TwitterAPI) and the top trend for each city. Pages of individual cities list top trends for that location with an identifier on the UK map.
 
